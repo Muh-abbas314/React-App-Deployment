@@ -1,0 +1,110 @@
+/* .cant{
+    background-color: black;
+} */
+/* 
+.overlay{
+    width: 98vw;
+    height: 77vh;
+    
+     margin: auto;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+
+.subtitle{
+    width: 40rem;
+    }
+.title{   
+    font-size:44px;
+    font-weight: bolder;
+    margin: 10px;
+    color: white;
+}
+.summary{
+    margin:0px 10px;
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    text-align: justify;
+}
+.home-vans-btn{
+    color: white;
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: #FF8C38;
+}
+button:hover{
+    cursor: pointer;
+    }
+
+.bg-img{
+     height: 76vh;
+    width: 98vw;
+    opacity:0.7;
+    margin: auto;
+  display: block;
+}
+ */
+.Home-main{
+    position: relative;
+}
+.Home-summary{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* -ms-transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
+   
+}
+.home-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size:clamp(2rem, 0, 3rem);
+line-height: 42px;
+}
+.home-subs{
+margin: 0;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size:clamp(3rem, 0, 3rem);
+/* line-height: 24px; */
+/* or 150% */
+
+
+color: #FFFFFF;
+}
+ .bg-img{
+    border:1px solid black ;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("../assets/image54.jpg") no-repeat center center ;
+    height: 86vh;
+    background-size: cover;
+    color: white;
+     }
+
+.Home-btn{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 15.9462px;
+line-height: 32px;
+/* or 199% */
+
+text-align: center;
+
+color: #FFFFFF;
+background-color: #FF8C38;
+}
