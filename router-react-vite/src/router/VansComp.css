@@ -1,0 +1,131 @@
+
+/* ****************Card CSS */
+.card--link{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.card--link:hover{
+    cursor: pointer;
+}
+.img--container{
+    /* border: 10px solid red; */
+    /* min-width: 213px; */
+    display: inline-block;
+    height:fit-content;
+    /* width: auto; */
+    /* height: 400px; */
+}
+.card--desc{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width:auto;
+    /* border: 1px solid red; */
+
+   
+}
+.card--title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    /* font-size: clamp(1rem, 1.3vw, 1.5rem); */
+    line-height: 32px;
+    
+   
+}
+.pricing{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.price--1{
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 158% */
+    text-align: right;
+}
+.card--position{
+    /* padding: 10px 40px; */
+    /* border: 1px solid greenyellow; */
+    position: relative;
+}
+.h1-pos{
+    position: relative;
+}
+.prod-tag{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    color: white;
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius:10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+
+}
+
+.card--image{
+    width: 100%;
+    /* max-width: 213px; */
+    height: 90%;
+    object-fit: cover;
+}
+
+/* *****************Main Comp Files */
+
+
+.cards-comp{
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+}
+.filter-title{
+    text-align: left;
+}
+.filter--btns {
+/* border: 1px solid black; */
+}
+.fil-btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 5px;
+}
+.clear-btn{
+    background: none;
+    
+    color: #4D4D4D;
+    text-decoration: underline;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.fil-btn,.clear-btn:hover() {
+cursor: pointer;
+
+}

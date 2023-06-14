@@ -1,0 +1,54 @@
+.income--font
+{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 22px;
+color: #161616;
+}
+.income--days{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 138% */
+
+text-decoration-line: underline;
+
+color: #4D4D4D;
+}
+.trans--font{
+    margin-top: 10px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 22px;
+color: #161616;
+}
+.cash--data{
+    margin: 10px 0px;
+    /* max-width: 30rem; */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cash--data h3{
+font-size: 30px;
+}
+.cash--data p{
+   font-size: 20px;
+}
+
+.trans-scroll{
+    margin-top: 1px solid black;
+    display: flex;
+    border-top: 1px solid black ;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    overflow-y: scroll;
+    height: 40vh;
+    }

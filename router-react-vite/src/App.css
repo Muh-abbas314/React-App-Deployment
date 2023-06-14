@@ -30,6 +30,7 @@ nav{
 }
 
 nav a{
+  margin: 0 10px;
   font-size: larger;
   font-weight: bold;
   text-decoration: none;
@@ -47,8 +48,9 @@ nav a:hover{
 
 footer{
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  /* margin-top:100%; */
+  /* position: absolute; */
+  /* bottom: 0; */
   color: #AAAA;
   background-color: #252525;
   /* position: sticky;
@@ -56,4 +58,9 @@ footer{
   text-align: center;
   border: 1px solid black;
   padding: 25px;
+}
+
+.header-link{
+  font-size: clamp(14px, 1vw, 18px);
+  /* font-size: 1.2vw; */
 }

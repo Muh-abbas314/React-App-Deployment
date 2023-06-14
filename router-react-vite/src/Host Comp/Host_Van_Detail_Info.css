@@ -1,0 +1,53 @@
+.host--van--detail--info{
+    /* border: 1px solid black; */
+    width: 70%;
+}
+.host--van--detail--info  h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14.3548px;
+}
+.host--van--detail--info  span{
+    
+    text-align: justify;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 12.3548px;
+/* line-height: 21px; */
+}
+
+/* *********************PRICE */
+.host--van--price{
+     font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.3548px;
+}
+
+/* **************************DETAIL CARD */
+.vans-detail-img{
+    /* width: 262.212px; */
+}
+.details--title{
+    font-size: 4.3vw;
+}
+.details--tag{
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.details--price{
+    /* margin-bottom: 12px; */
+    font-size: 18px;
+    font-weight: bolder;
+    /* font-weight: bolder; */
+
+}
+.card-body{
+    /* margin-bottom: 20%; */
+}

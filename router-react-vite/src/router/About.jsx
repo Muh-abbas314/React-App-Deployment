@@ -33,8 +33,8 @@ export default function About()
                     Your destination is waiting. <br></br>
                     Your Van is ready
                 </h1>
-                <div className='col-md-4 '>
-                <Link className='explore-link' to="vans"><button className='btn-explore'>Explore our vans</button></Link>
+                <div className='col-md-4 mx-3 border'>
+                <Link className='explore-link' to="/vans"><button className='btn-explore'>Explore our vans</button></Link>
                 </div>
             </div>
             

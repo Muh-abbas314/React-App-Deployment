@@ -1,0 +1,109 @@
+body{
+    background-color: #FFF7ED;
+}
+
+.review--title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+}
+.review--sub--title{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+    
+    
+    color: #4D4D4D;
+}
+.comment--title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height, or 127% */
+
+
+color: #161616;
+}
+
+.graph--title{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 23px;
+    /* identical to box height, or 72% */
+    color: #161616;
+
+}
+.graph--title span{
+    width: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+margin: 0 10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 138% */
+color: #161616;
+}
+.graph--title img{
+    width: 20px;
+}
+
+.graph-img{
+    /* width:70vw;
+    height: 30vh; */
+}
+
+.comment-text{
+    background-color: #FFF7ED;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: justify;
+    border: none;
+    /* padding: 3px; */
+}
+
+.review-cmt-date{
+    /* Sandy November 23, 2022 */
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 32px;
+/* identical to box height, or 198% */
+margin: 0px 5px;
+color:grey;
+}
+
+
+
+
+.comment-container{
+display: flex;
+border-top: 1px solid black ;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+overflow-y: scroll;
+height: 40vh;
+}
+.comment-container::-webkit-scrollbar {
+        /* display: block; */
+      }

@@ -1,0 +1,64 @@
+.details-parent{
+margin-top: 5rem;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+border-radius: 10px;
+}
+.back--to--vans--btn--link:hover(){
+    cursor: pointer;
+}
+.rent--link:hover(){
+    cursor: pointer;
+}
+.back--to--vans--btn{
+ border: none;
+ background: none;
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15.9462px;
+text-decoration: underline;
+padding: 10px;
+line-height: 23px;
+}
+.detail--img-container{
+   
+    margin: 10px;
+}
+.van--detail--img{
+ /* width: 213px; */
+ object-fit: contain;
+}        
+
+.van--detail--tag{
+    color: white;
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius:10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.van--detail--desc{
+    text-align: justify;
+    color: black;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+}
+.van--book--btn{
+    width: 100%;
+    background-color: #FF8C38;
+    color:white;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+border: none;
+padding: 20px;
+border-radius: 10px;
+}
