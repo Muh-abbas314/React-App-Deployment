@@ -9,8 +9,11 @@ export default function Cards(props)
                         props.type==='luxury'?"#161616":
                         props.type==='rugged'?"#115E59":"none"
     }
+    console.log("Card state ",props.state)
         return(<div className='img--container col-md-4 mx-2 my-3 border'>
-        <Link className="card--link" to={`/vans/${props.id}`}>
+        <Link
+        state={props.state}
+         className="card--link" to={`/vans/${props.id}`}>
         <img className='card--image' src={props.imageUrl}/>
         
         <div className='card--position'>

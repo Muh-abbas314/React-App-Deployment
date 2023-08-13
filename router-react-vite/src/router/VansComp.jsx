@@ -1,11 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 // 
 import Cards from "./VansCard";
 import "./VansComp.css";
 import { useEffect } from "react";
 export default function VansComp() {
+
+
+  const [searchPara, setSearchParam]=useSearchParams()
   const [vansData, setVansData] = useState([]);
+
+  const typeFilter=searchPara.get("type") 
+   const DispElement=typeFilter? vansData.filter(item=>item.type===typeFilter):vansData
 
   useEffect(() => {
     fetch("/api/vans")
@@ -15,11 +21,12 @@ export default function VansComp() {
     console.log("this is State", vansData);
   }, []);
 
-  console.log("this is State", vansData);
+  // console.log("this is State", vansData);
 
-  const vansElements = vansData.map((item) => {
+  const vansElements = DispElement.map((item) => {
     return (
       <Cards
+        state={{ search: `?${searchPara.toString()}` }}
         key={item.id}
         id={item.id}
         imageUrl={item.imageUrl}
@@ -29,6 +36,20 @@ export default function VansComp() {
       />
     );
   });
+
+  // console.log("Search Param ",searchPara)
+
+  function handleFilterChange(key, value) {
+    setSearchParam(prevParams => {
+      if (value === null) {
+        prevParams.delete(key)
+      } else {
+        prevParams.set(key, value)
+      }
+      return prevParams
+    })
+  }
+
 
   return <div className="container  ">
     <div className="row my-3 text-center "> 
@@ -41,11 +62,12 @@ export default function VansComp() {
       <div className="row my-2">
         <div className="col-md-6 p-0">
         <div className="filter--btns ">
-        <button className="fil-btn">Simple</button>
-        <button className="fil-btn">Luxury</button>
-        <button className="fil-btn">Rugged</button>
-        <button className="clear-btn">Clear Filter</button>
-      </div>
+        <button onClick={() => handleFilterChange('type','simple')} className="fil-btn">Simple</button>
+        <button onClick={() => handleFilterChange('type','luxury')} className="fil-btn">Luxury</button>
+        <button onClick={() => handleFilterChange('type','rugged')} className="fil-btn">Rugged</button>
+        {typeFilter?(<button onClick={() => handleFilterChange('type',null)} className="clear-btn">Clear Filter</button>)
+        :null}
+          </div>
         </div>
       </div>
     </nav>  

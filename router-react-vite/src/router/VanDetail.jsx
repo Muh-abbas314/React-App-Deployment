@@ -1,12 +1,15 @@
 import './VanDetail.css'
-import {useParams, Link} from 'react-router-dom'
+import {useParams, Link, useLocation} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 // import logo1 from '../assets/modest-explorer.png'
 export default function VanDetail()
 {
  const [vanDetailCard,setVanDetail]=useState([])
  const params = useParams()
+ const location=useLocation()
+
     console.log(params)
+    console.log("Location ",location)
 
     useEffect(()=>{
         fetch(`/api/vans/${params.id}`)
@@ -21,9 +24,9 @@ export default function VanDetail()
                         vanDetailCard.type==='luxury'?"#161616":
                         vanDetailCard.type==='rugged'?"#115E59":"none"
     }
-
+    const search = location.state?.search || ""
     return(<>
-    <Link to="/vans" className='back--to--vans--btn--link'><button className='back--to--vans--btn'>&#8592; Back to all vans</button></Link>
+    <Link to={`..${search}`}  relative="path" className='back--to--vans--btn--link'><button className='back--to--vans--btn'>&#8592; Back to all vans</button></Link>
     
     {vanDetailCard.length!==0?(<div className='details-parent container-lg   my-5 '>
     <div className='d-flex flex-column  justify-content-center align-items-center'>

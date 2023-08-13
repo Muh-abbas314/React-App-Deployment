@@ -52,7 +52,7 @@ export default function Dashboard() {
 
         <div className="row my-2 dash--van--card">
           
-          <div className="col-md-8 my-3 border">
+          <div className="col-md-8 my-3 ">
             <div className="row">
               <div className="col-3">
                 <img className="card-img-top" src={logo} alt="" />
@@ -75,7 +75,7 @@ export default function Dashboard() {
           </div>
 
           {/* 2nd card  */}
-          <div className="col-md-8 my-3 border">
+          <div className="col-md-8 my-3 ">
             <div className="row">
               <div className="col-3">
                 <img className="card-img-top" src={logo} alt="" />
@@ -100,7 +100,7 @@ export default function Dashboard() {
 
 
           {/* 3rd card */}
-          <div className="col-md-8 my-3 border">
+          <div className="col-md-8 my-3">
             <div className="row">
               <div className="col-3">
                 <img className="card-img-top" src={logo} alt="" />
